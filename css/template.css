@@ -38,7 +38,7 @@ body {
 }
 
 #wrap {
-    background-color: aqua;
+    background-color: rgb(53, 185, 185);
     max-width: 1024px; /* Largura máxima */
     min-width: 280px; /* Largura mínima */
     margin:auto; /* Centraliza tudo */
