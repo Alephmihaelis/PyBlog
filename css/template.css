@@ -36,3 +36,10 @@ body {
     background-color: rgb(240, 240, 240);
     background-image: url('/images/snakebg2.png');
 }
+
+#wrap {
+    background-color: aqua;
+    max-width: 1024px; /* Largura máxima */
+    min-width: 280px; /* Largura mínima */
+    margin:auto; /* Centraliza tudo */
+}
