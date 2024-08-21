@@ -20,7 +20,12 @@ html, body, #wrap {
     margin: 0;
 }
 
+html, body {
+    /* Fonte padrão do site */
+    font-family: Roboto sans-serif;
+}
+
 body {
-    background-color: bisque;
-    background-image: url('/images/favicon.png');
+    background-color: rgb(240, 240, 240);
+    background-image: url('/images/snakebg2.png');
 }
