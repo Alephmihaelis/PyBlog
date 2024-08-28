@@ -57,14 +57,23 @@ body {
     margin: auto;
 }
 
+/* Estiliza filhos de #wrap */
+#wrap>header,
+#wrap>nav,
+#wrap>footer,
+#wrap>main>article,
+#wrap>main>aside {
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+
 /*********************
  ***** Cabeçalho *****
  *********************/
 
 #wrap>header {
     background-color: rgb(70, 130, 180);
-    margin: .25rem;
-    border-radius: .5rem;
 }
 
 #wrap>header>a {
@@ -130,8 +139,6 @@ body {
 
 #wrap>nav {
     background-color: rgb(0, 0, 0);
-    margin: .25rem;
-    border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -165,3 +172,34 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
 }
+
+/****************************
+ ***** Template central *****
+ ****************************/
+
+#wrap>main {
+    color: inherit;
+}
+
+#wrap>main>article {
+    background-color: white;
+    padding: 1rem;
+}
+
+#wrap>main>article>h2:first-child,
+#wrap>main>aside>h3:first-child {
+    margin: 0;
+}
+
+#wrap>main>aside {
+    background-color: #eee;
+    padding: 1rem;
+}
+
+/******************
+ ***** Rodapé *****
+ ******************/
+
+#wrap > footer {
+    background-color: inherit;
+} 
