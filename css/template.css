@@ -66,6 +66,9 @@ body {
     min-width: 280px;
     /* Bloco centralizado */
     margin: auto;
+    /* Sticky footer */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estiliza filhos de #wrap */
@@ -191,12 +194,15 @@ body {
  ****************************/
 
 #wrap>main {
-    color: inherit;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #wrap>main>article {
     background-color: rgba(255, 255, 255, .9);
     padding: 1rem;
+    flex-grow: 1;
 }
 
 #wrap>main>article>h2:first-child,
