@@ -300,3 +300,13 @@ body {
         margin: 0 .35rem 0 0;
     }
 }
+
+@media screen and (min-width: 640px) {
+    #wrap>main {
+        flex-direction: row;
+    }
+    #wrap>main>aside {
+        min-width: 12.5rem;
+        max-width: 12.5rem;
+    }
+}
