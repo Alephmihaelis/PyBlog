@@ -36,8 +36,10 @@ html,
 body,
 #wrap {
     /* Reset dos elementos raiz */
+    /* Para usar height=100% */
     position: relative;
     width: 100%;
+    /* Sticky footer */
     height: 100%;
     padding: 0;
     margin: 0;
@@ -194,6 +196,7 @@ body {
  ****************************/
 
 #wrap>main {
+    /* Sticky Footer */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -202,6 +205,7 @@ body {
 #wrap>main>article {
     background-color: rgba(255, 255, 255, .9);
     padding: 1rem;
+    /* Sticky Footer */
     flex-grow: 1;
 }
 
@@ -270,19 +274,29 @@ body {
     margin-left: 1rem;
 }
 
-#fotrack {
-    height: .1rem;
-}
 
 /********************************************
  ***** Resoluções de 640 pixels ou mais *****
  ***** Usando Media Queries             *****
  ********************************************/
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 575px) {
+
+    /* altera o cabeçalho */
     #wrap>header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /* Altera o menu */
+    #wrap>nav a {
+        flex-direction: row;
+        
+    }
+
+    #wrap>nav a i {
+        font-size: 1.2rem;
+        margin: 0 .35rem 0 0;
     }
 }
